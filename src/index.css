@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --color-pastel-bg: #FAF5F7;
+    --color-pastel-surface: #FFFFFF;
+    --color-pastel-card: #FFF2F6;
+    --color-pastel-border: #F0D7DF;
+    --color-contrast-dark: #1C1217;
+    --color-contrast-surface: #25161F;
+    --color-wine: #9E244D;
+    --color-wine-dark: #7A1838;
+    --color-text-main: #1C1217;
+    --color-text-muted: #5C4A53;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #FAF5F7;
+    color: #1C1217;
+  }
+
+  body {
+    background-color: #FAF5F7;
+    color: #1C1217;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-sans);
+    letter-spacing: -0.025em;
+    color: #1C1217;
+  }
+}
+
+.font-display {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+/* Custom delicate focus rings */
+*:focus-visible {
+  outline: 2px solid #9E244D;
+  outline-offset: 2px;
+}
+
